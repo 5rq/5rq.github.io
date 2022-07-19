@@ -73,7 +73,7 @@ function switchScreen() {
     });
   });
 
-  ['juice_fenty_03'].forEach(function (audioName) {
+  ['background'].forEach(function (audioName) {
     let fullPath = `assets/audio/${audioName}.mp3`;
 
     let audioElement = document.createElement('audio');
