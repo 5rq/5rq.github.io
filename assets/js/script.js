@@ -24,10 +24,10 @@ function openSocial(type) {
 
 function startIntroTyping() {
   new TypeIt('#intro-text', {
-    speed: 50,
+    speed: 100,
   })
-    .type('welcome.', { delay: 600 })
-    .delete(null, { delay: 500 })
+    .type('welcome.', { delay: 400 })
+    .delete(null, { delay: 300 })
     .type(`${mobile ? 'tap' : 'press any key'} to enter.`)
     .go();
 
@@ -39,7 +39,7 @@ function startIntroTyping() {
 function typerStartTyping(typer) {
   typer.reset();
 
-  let text = ['Brainless', 'Slow', 'Stupid', 'Dumb'];
+  let text = ['Brainless', 'Stupid', 'Dumb'];
 
   text.forEach(function (language, index) {
     typer.move(null);
